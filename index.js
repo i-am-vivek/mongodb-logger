@@ -4,7 +4,6 @@ const loggerModel = require('./logs');
 // adding logId, logType and loggedAt to logs
 const myFormatter = format((info) => {
     const data = info.message;
-
     info.message = data.message;
     info.loggedAt = data.loggedAt;
     info.logId = data.logId;
