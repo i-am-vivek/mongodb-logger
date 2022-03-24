@@ -1,4 +1,4 @@
-declare class Logger {
+export declare class Logger {
     constructor(logType: string, options: any = {});
     getLogId(idLength: number): string;
     addLogEntry(level: string, message: string): void;

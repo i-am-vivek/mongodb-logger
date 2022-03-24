@@ -65,10 +65,10 @@ class Logger {
     addLogEntry(level, message) {
         if (process.env.NODE_ENV !== 'production') {
             // eslint-disable-next-line no-console
-            console.log({
-                level,
-                message: `${message} timestamp:${moment().toISOString()}`,
-            });
+            // console.log({
+            //     level,
+            //     message: `${message} timestamp:${moment().toISOString()}`,
+            // });
         }
         this.logs.push({
             level,
@@ -111,7 +111,7 @@ class Logger {
                 timestamp: log.loggedAt,
                 ...log,
             }))
-        );
+        ).then(() => { }).catch(console.log);
     }
 }
 

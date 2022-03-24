@@ -1,6 +1,6 @@
 {
   "name": "mongodb-logger-winston",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "log the informations which are given, in mongodb",
   "main": "index.js",
   "scripts": {
